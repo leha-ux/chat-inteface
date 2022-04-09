@@ -1,0 +1,201 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+member {
+  @apply fixed;
+  @apply w-full;
+  @apply bg-gray-600;
+  @apply shadow-lg;
+  @apply top-16;
+  @apply align-middle;
+
+  z-index: 40;
+}
+
+member > div {
+  @apply container;
+  @apply max-w-xl;
+  @apply flex;
+  @apply content-center;
+  @apply items-center;
+  @apply justify-between;
+  @apply h-16;
+  @apply px-4;
+}
+
+member h1 {
+  @apply text-white;
+  @apply text-xl;
+}
+
+member h1 > strong {
+  @apply text-blue-500;
+}
+
+member .login {
+  @apply right-0;
+  @apply flex;
+  @apply ml-auto;
+}
+
+
+
+member button {
+  @apply text-white;
+  @apply p-1;
+  @apply rounded;
+  @apply px-4;
+}
+
+nav {
+  @apply fixed;
+  @apply w-full;
+  @apply bg-gray-700;
+  @apply shadow-lg;
+  @apply top-0;
+
+  z-index: 100;
+}
+
+nav > div {
+  @apply container;
+  @apply max-w-xl;
+  @apply flex;
+  @apply content-center;
+  @apply items-center;
+  @apply justify-between;
+  @apply h-16;
+  @apply px-4;
+}
+
+nav h1 {
+  @apply text-white;
+  @apply text-xl;
+}
+
+nav h1 > strong {
+  @apply text-blue-500;
+}
+
+nav .login {
+  @apply right-0;
+  @apply flex;
+  @apply ml-auto;
+}
+
+
+
+nav button {
+  @apply text-white;
+  @apply p-1;
+  @apply rounded;
+  @apply px-4;
+}
+
+.ProfileMain {
+  @apply h-8;
+  @apply w-8;
+  @apply rounded-full;
+}
+
+
+.content-style{
+  @apply bg-blue-200;
+  @apply text-blue-200;
+}
+
+.container-sm {
+  @apply container;
+  @apply max-w-xl;
+}
+
+.message {
+  @apply my-2;
+  @apply w-full;
+}
+
+.message span {
+  @apply text-xs;
+  @apply text-neutral-500;
+  @apply fixed; 
+  @apply ml-20;
+}
+
+.message .text {
+  @apply mx-2;
+  @apply p-2;
+  @apply rounded;
+  @apply text-white;
+}
+
+
+.message .textSend {
+  @apply mx-2;
+  @apply p-2;
+  @apply rounded-md;
+  @apply text-white;
+  @apply text-left;
+
+}
+.message .textReceive {
+  @apply mx-2;
+  @apply p-2;
+  @apply rounded-md;
+  @apply text-black;
+  @apply text-left;
+}
+
+.bottom {
+  @apply fixed;
+  @apply bottom-0;
+  @apply bg-gray-700;
+  @apply shadow-lg;
+  @apply w-full;
+}
+
+.bottom form {
+  @apply w-full;
+  @apply flex;
+  @apply justify-between;
+}
+
+.bottom form input {
+  @apply flex-grow;
+  @apply m-2;
+  @apply py-2;
+  @apply px-4;
+  @apply mr-1;
+  @apply rounded;
+  @apply border-none;
+  @apply bg-gray-500;
+  @apply text-white;
+}
+
+.icon-send {
+  @apply text-gray-500;
+  @apply w-12;
+  @apply h-12;
+  @apply py-2;
+  @apply mr-2;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-600;
+  @apply shadow-lg;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300;
+  @apply rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-200;
+}

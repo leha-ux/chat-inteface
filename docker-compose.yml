@@ -1,0 +1,48 @@
+version: '3'
+
+services:
+
+  #authent:
+  #  build: 
+  #    context: ./backend/authent/
+  #  ports:
+  #    - 8000:80
+  #  networks:
+  #    - test
+
+
+  chat:
+    build: 
+      context: ./backend/chat/
+    ports:
+      - 8084:8084
+    networks:
+      - test
+
+  #chat-interface:
+  #  build: 
+  #    context: ./chat-interface/
+  #  ports:
+  #    -  8080:80
+  #  networks:
+  #    - test
+
+networks:
+  test:
+
+#  search-server: 
+#    build: ./ParlAI_SearchEngine
+#    ports: 
+#      - 8080:8080
+#  blenderbot: 
+#    build: ./blenderbot
+#    ports: 
+#      - 8081:8081
+#    depends_on:
+#      - search-server
+#    environment:
+#      - METHOD=all
+#      - HTTP=search-server:8080
+
+  
+  
